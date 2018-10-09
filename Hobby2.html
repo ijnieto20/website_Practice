@@ -1,0 +1,81 @@
+<!doctype html>
+<title>Learning 2 Suture</title>
+<style>
+body { 
+  display: grid;
+  grid-template-areas: 
+    "header header"
+    "ads article"
+    "nav article"
+    "nav footer";
+  grid-template-rows: 80px 120px 1fr 70px;  
+  grid-template-columns: 20% 1fr;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  height: 100vh;
+  margin: 0;
+  }  
+header, footer, article, nav, div {
+  padding: 1.2em;
+  background: yellowgreen;
+  }
+#pageHeader {
+  grid-area: header;
+  }
+#pageFooter {
+  grid-area: footer;
+  }
+#mainArticle { 
+  grid-area: article;      
+  }
+#mainNav { 
+  grid-area: nav; 
+  }
+#siteAds { 
+  grid-area: ads; 
+  } 
+/* Stack the layout on small devices/viewports. */
+@media all and (max-width: 575px) {
+  body { 
+    grid-template-areas: 
+      "header"
+      "article"
+      "ads"
+      "nav"
+      "footer";
+    grid-template-rows: 80px 1fr 70px 1fr 70px;  
+    grid-template-columns: 1fr;
+ }
+}
+</style>
+<body>
+  <header id="pageHeader">Learning To Suture!</header>
+  <article id="mainArticle">How To Suture:
+  <p>In its most basic form, a suture is simply a series of knots tied over an open wound to enable and aid the skin to close properly. A variety of knots can and have been used, each of them specifically suited for a certain type of injury. However, in a survival situation, the goal should always be health. </p><p>Although it may seem like a large amount of information, suturing a wound can be a simple process, particularly if you have practiced for it. Just remember these key basic steps:</p>
+    <p> <ol> 
+    <li>Observe the wound and determine the best way to close it.</li>
+    <li>Put gloves on to minimize potential infection.</li>
+    <li>Clean and irrigate the wound, removing any foreign matter or debris.</li>
+    <li>Thread the curved needle, or open your suture kit and grasp the needle with your needle driver.</li>
+    <li>Start at the center of the laceration and work outwards. Leave approximately 1/8 an inch between each stitch.</li>
+    <li>Bandage the wound to minimize later infection.</li>
+    </ol>
+   <p> <a href="https://www.offthegridnews.com/current-events/top-headlines/suturing-wounds-when-necessary/">Get More Information on Suturing Here!</a> </p>
+    <p> <img src="https://www.spineuniverse.com/sites/default/files/imagecache/gallery-large/wysiwyg_imageupload/3998/2018/03/27/Suture.jpg" title="Suture" alt="oops" height="160px" width="400px"> </p>
+  </article>
+  <nav id="mainNav">What kinds of Sutures Techniques are there?
+    <p> <ol>
+    <li>Simple interrupted suture</li>
+    <li>Line of interrupted sutures</li>
+    <li>Running suture line</li>
+    <li>Running locked suture</li>
+    <li>Vertical mattress</li>
+    <li>Pulley stitch type 1</li>
+    </ol>
+	<p> <a href="http://www.dolphinsutures.com/types-of-sutures"><img src="http://omnisurge.co.za/wp-content/uploads/2016/11/absorbable.jpg" title="Suture Wire" alt="Oops" width="140px"></a></p>
+  </nav>
+  <div id="siteAds">
+    <a href="https://www.artofmanliness.com/articles/how-to-suture-a-wound/"><img src="https://content.artofmanliness.com/uploads/2018/02/Suture-Header-1.jpg" title="Suture a Wound!" alt="Oops" width="200px" height="90px"></a></div>
+  <footer id="pageFooter">My Hobby Is Here! <a href="index.html">Click Here to Learn about why this is my hobby!</a></footer>
+  
+</body>
