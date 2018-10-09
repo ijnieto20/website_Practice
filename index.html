@@ -1,0 +1,68 @@
+<!doctype html>
+<title>What is my Hobby?</title>
+<style>
+body { 
+  display: grid;
+  grid-template-areas: 
+    "header header header"
+    "nav article ads"
+    "nav footer footer";
+  grid-template-rows: 80px 1fr 70px;  
+  grid-template-columns: 20% 1fr 15%;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  height: 100vh;
+  margin: 0;
+  }  
+header, footer, article, nav, div {
+  padding: 1.2em;
+  background: green;
+  }
+#pageHeader {
+  grid-area: header;
+  }
+#pageFooter {
+  grid-area: footer;
+  }
+#mainArticle { 
+  grid-area: article;      
+  }
+#mainNav { 
+  grid-area: nav; 
+  }
+#siteAds { 
+  grid-area: ads; 
+  } 
+media all and (max-width: 575px) {
+  body { 
+    grid-template-areas: 
+      "header"
+      "article"
+      "ads"
+      "nav"
+      "footer";
+    grid-template-rows: 80px 1fr 70px 1fr 70px;  
+    grid-template-columns: 1fr;
+ }
+}
+</style>
+<body>
+  <header id="pageHeader">What is my Hobby?: Suturing <p>By: Isaac Nieto Period 1</p></header>
+ 
+  
+  <article id="mainArticle">Volunteering at a Hospital <p> I volunteer at San Antonio Regional Hospital. I work in the Emergency Department doing many things. I suture in my past time to gain experience in my future field of medicine. I am going to become a general surgeon, this requires the use of sutures to patch up patients with open wounds.</p>
+    <p>Why do I suture?</p> <p>I suture because to me, it allows me to be more versatile in dangerous situations. As a doctor, you need to be ready to assist at any time. So being able to suture well, will benefit myself in the long run.</p> <p>
+    <a href="https://www.simulab.com/tools-improve-suturing-skills"> <img src="http://www.howtosurvivestuff.com/wp-content/uploads/2013/01/Suture-e1500524686192.jpg" title="Suturing!" alt="oops"></a></article>
+  
+  
+  
+  
+  <nav id="mainNav">Different Types of Sutures
+    <a href="https://www.healthline.com/health/sutures"><p>Find Suture Techniques Here!</p> <img src="https://i.pinimg.com/236x/0d/b9/35/0db93535b054c6a76b103ae6db9c7bb9--nurses-herbal.jpg" title="Suture Techniques!" alt="Oops" width="240px" height="400px"> </a>
+      </nav>
+ 
+    <div id="siteAds">Where I work!
+      <p><a href="https://www.sarh.org/">Click Here to go to SARH!</a></p>
+      <img src="https://d1lhri34tovdcj.cloudfront.net/prod/corporate/images/hospitals/logos/6410logo.jpg" title="SARH" alt="Oops" width="190px"></div>
+  <footer id="pageFooter">Isnt Suturing Cool! <a href="Hobby2.html">Click Here to Learn about Suturing!</a></footer>
+</body>
